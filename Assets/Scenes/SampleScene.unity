@@ -242,10 +242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ac2e7a4c63b4346b2d70fbe30f5ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetScale: {x: 2, y: 1, z: 1}
   _duration: 4
   _repeats: -1
   _loopType: 1
+  _targetScale: {x: 2, y: 1, z: 1}
 --- !u!1 &143361712
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,10 +293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5e620416830ef4b98e1cde69c8897c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _point: {x: 3, y: 5, z: 27}
   _duration: 3
   _repeats: -1
   _loopType: 1
+  _targetPosition: {x: 3, y: 5, z: 27}
 --- !u!135 &143361715
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -484,6 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 946573996}
+  _scrambleMode: 1
 --- !u!1 &305437274
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,10 +698,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ac2e7a4c63b4346b2d70fbe30f5ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetScale: {x: 1, y: 8, z: 4}
   _duration: 4
   _repeats: -1
   _loopType: 1
+  _targetScale: {x: 1, y: 8, z: 4}
 --- !u!114 &589770841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,10 +714,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5001526d002f3fa42a5772b63ceb51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotation: {x: 0, y: 0, z: 360}
   _duration: 3
   _repeats: -1
   _loopType: 1
+  _rotation: {x: 0, y: 0, z: 360}
+  _rotateMode: 1
 --- !u!114 &589770842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,10 +731,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5e620416830ef4b98e1cde69c8897c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _point: {x: 27.7, y: 8, z: 15}
   _duration: 4
   _repeats: -1
   _loopType: 1
+  _targetPosition: {x: 27.7, y: 10, z: 21}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,10 +1247,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5001526d002f3fa42a5772b63ceb51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotation: {x: 360, y: 360, z: 0}
   _duration: 6
   _repeats: -1
   _loopType: 0
+  _rotation: {x: 360, y: 360, z: 0}
+  _rotateMode: 1
 --- !u!1 &1548205994
 GameObject:
   m_ObjectHideFlags: 0

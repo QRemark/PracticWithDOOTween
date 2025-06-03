@@ -17,7 +17,7 @@ public class ColorChanger : MonoBehaviour
     private void ChangeToNextColor()
     {
         Color nextColor = _colors[_currentIndex];
-        _currentIndex = (_currentIndex + 1) % _colors.Length;
+        _currentIndex = ++_currentIndex % _colors.Length;
 
         _targetRenderer.material.DOColor(nextColor, _duration).OnComplete(ChangeToNextColor);
     }
