@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class TextChanger : MonoBehaviour
 {
     [SerializeField] private Text _text;
+    [SerializeField] private ScrambleMode _scrambleMode = ScrambleMode.All;
 
     private string _secondLine = "Забудь про учебу смелее, ";
     private string _thirdLine = "Но приходиться думать ";
@@ -25,6 +26,6 @@ public class TextChanger : MonoBehaviour
         sequence.AppendInterval(_shortDuration);
         sequence.Append(_text.DOText(_secondLine, _longDuration));
         sequence.Append(_text.DOText(_thirdLine, _longDuration).SetRelative());
-        sequence.Append(_text.DOText(_fourthLine, _longDuration, true, ScrambleMode.All));
+        sequence.Append(_text.DOText(_fourthLine, _longDuration, true, _scrambleMode));
     }
 }

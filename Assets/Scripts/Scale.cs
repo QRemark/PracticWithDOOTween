@@ -8,7 +8,6 @@ public class Scale : MonoBehaviour
     [SerializeField] private int _repeats = -1;
     [SerializeField] private LoopType _loopType;
 
-
     private void Start()
     {
         ChangeSize();
@@ -16,6 +15,6 @@ public class Scale : MonoBehaviour
 
     private void ChangeSize()
     {
-        transform.DOScale(_targetScale, _duration).SetLoops(_repeats, LoopType.Yoyo);
+        transform.DOScale(_targetScale, _duration).SetLoops(_repeats, _loopType);
     }
 }

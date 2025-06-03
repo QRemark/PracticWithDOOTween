@@ -7,6 +7,7 @@ public class Rotate : MonoBehaviour
     [SerializeField] private float _duration = 3f;
     [SerializeField] private int _repeats = -1;
     [SerializeField] private LoopType _loopType;
+    [SerializeField] private RotateMode _rotateMode = RotateMode.FastBeyond360;
 
     private void Start()
     {
@@ -15,6 +16,6 @@ public class Rotate : MonoBehaviour
 
     private void ChangeAxis()
     {
-        transform.DORotate(_rotation, _duration, RotateMode.FastBeyond360).SetLoops(_repeats, LoopType.Restart);
+        transform.DORotate(_rotation, _duration, _rotateMode).SetLoops(_repeats, _loopType);
     }
 }

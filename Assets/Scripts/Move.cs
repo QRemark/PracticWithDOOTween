@@ -10,10 +10,10 @@ public class Move : MonoBehaviour
 
     private void Start()
     {
-        Travel();
+        TravelToPoint();
     }
 
-    private void Travel()
+    private void TravelToPoint()
     {
         transform.DOMove(_point, _duration).SetLoops(_repeats, _loopType);
     }
